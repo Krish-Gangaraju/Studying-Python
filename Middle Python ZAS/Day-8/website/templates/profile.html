@@ -1,0 +1,133 @@
+<html>
+<head>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+	
+	<link href="{{ url_for('static', filename='css/font-awesome.min.css')}}" href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/font-awesome.css')}}" href="css/font-awesome.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+
+<!-- Navigation-->
+ <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='img/bc.png') }}"><h5 class="float-right text-primary">ZAS Academy</h5></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link active" href="{{ url_for('home')}}"><h5>Home</h5></a>
+			</li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('profile')}}"><h5>Profile</h5></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('home')}}"><h5>Achievements</h5></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('about')}}"><h5>About</h5></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('contact')}}"><h5>Contact</h5></a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+ </nav>
+ 
+ 
+
+<!-- Jumbotran -->
+<div class="jumbotron jumbotron-fluid bg-info text-white">
+	<div class="container">
+		<h1 class="display-2">Welcome to My Website</h1>
+		<p class="lead">Feel free to browse my personal projects and my profile.</p>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"
+			<a href="#"> <button type="button" class="btn btn-dark btn-outline-secondary btn-lg">Profile</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-2">
+		<img src="{{ url_for('static',filename='img/emc.jpg') }}" class="img-fluid rounded-circle" id="#card-img-top" alt="...">
+	</div>
+	<br>
+	<div class="col-sm-4 about-right">
+		<h2 class="text-center color-3">About Me & My Projects</h1>
+		<p class="p-first">This is a wider card with supporting text below as a natural lThis is a wider card with supporting text below as a natural lThis is a wider card with supporting text below as a natural lThis is a wider card with supporting text below as a natural lThis is a wider card with supporting text below as a natural lThis is a wider card with supporting text below as a natural l</p>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+</div>
+
+<div class="container">
+<div class="card-group">
+  <div class="card">
+    <img src="{{ url_for('static',filename='img/bigdata.jpg') }}" class="img-fluid" id="#card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 1</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"
+			<a href="#"> <button type="button" class="btn btn-dark btn-outline-secondary btn-md">Details</button>
+	  </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='img/robotics.jpg') }}" class="img-fluid" id="#card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 2</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"
+			<a href="#"> <button type="button" class="btn btn-dark btn-outline-secondary btn-md">Details</button>
+	  </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static',filename='img/iot.jpg') }}" class="img-fluid" id="#card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 3</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"
+			<a href="#"> <button type="button" class="btn btn-primary btn-outline-secondary btn-md">Details</button>
+	  </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer Bottom -->
+
+<div class="footer-bottom sticky-bottom margin-top">
+        <div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center ">
+							<div class="copyright-text">
+								<p>CopyRight © 2020 Digital All Rights Reserved</p>
+							</div>
+						</div> <!-- End Col -->
+						
+					</div>
+				</div>
+</div>
+	
+
+</body>
+</html>
